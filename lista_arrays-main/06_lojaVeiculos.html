@@ -1,0 +1,48 @@
+<meta charset="UTF-8" />
+<script>
+    /*
+    PROBLEMA: LOJA DE VEÍCULOS
+    Crie os seguintes arrays:
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosHatch = ["308", "Focus", "i30"];
+    
+    Peça para o usuário informar mais três veículos para serem inseridos na lista. Para inserir na lista correta, peça também para o usuário identificar o tipo de veículo que deseja inserir, se é SUV, Sedan ou Hatch.
+
+    Apresente a lista final de cada tipo de veículo.
+    */
+
+    //ENTRADA
+
+    const car1 = prompt(`Por favor, ìnforme um veiculo para serem adicionado a lista`);
+
+    const car2 = prompt(`Por favor, ìnforme outro veiculo para serem adicionado a lista`);
+
+    const car3 = prompt(`Por favor, ìnforme outro veiculo para serem adicionado a lista`);
+
+    const carsType = prompt(`Por favor, Ìnforme o tipo do veiculo (SUV, Sedan ou Hatch")`).toUpperCase();
+
+
+    //PROCESSAMENTO
+    let SUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let Sedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let Hatch = ["308", "Focus", "i30"];
+
+    if (carsType === "SUV") {
+        SUV.push(car1, car2, car3);
+        document.write(`a lista final é ${SUV} <p>`);
+    }
+    else if (carsType === "SEDAN") {
+        Sedan.push(car1, car2, car3);
+        document.write(`a lista final é ${Sedan} <p>`);
+    }
+    else if (carsType === "HATCH") {
+        document.write(`a lista final é ${Hatch} <p>`);
+    }
+    else {
+        document.write(`informe um valor valido`)
+    }
+
+    //SAÍDA
+
+</script>
